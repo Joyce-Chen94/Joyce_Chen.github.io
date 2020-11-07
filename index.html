@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pinting Chen</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: lightseagreen;
+      }
+      #card {
+        width: 744px;
+        height: 528px;
+        background-color: white;
+        position: relative;
+        border-radius: 42px;
+      }
+      #intro {
+        width: 238px;
+        height: 284px;
+        background-color: darkslategray;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white;
+        padding-left: 24px;
+      }
+      #center {
+        width: 320px;
+        height: 528px;
+        //background-color: gray;
+        position: absolute;
+        left: 238px;
+        color: gray;
+        padding-left: 24px;
+      }
+      h2 {
+        color: lightseagreen;
+      }
+      #right {
+        width: 186px;
+        height: 528px;
+        position: absolute;
+        right: 0;
+      }
+      .skill {
+        width: 138px;
+        height: 32px;
+        //background-color: khaki;
+        position: relative;
+        color: gray;
+        margin-top:12px;
+      }
+      .graybar {
+        width: 138px;
+        height: 12px;
+        background-color: lightgray;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+      .greenbar {
+        width: 69px;
+        height: 12px;
+        background-color: lightseagreen;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+      }
+      .righttext{
+        position:absolute;
+        right:0;
+        top:0;
+     }
+     .greenbar2 {
+        width: 24px;
+        height: 12px;
+        background-color: lightseagreen;
+        position: absolute;
+        bottom: 0;
+        border-radius: 6px;
+        left:24px;
+      }
+      img{
+        position:absolute;
+        top:0;
+        left:0;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+      $(function () {
+        $("#img-2").hide();
+        $("#img-1").click(function(){
+        $("#img-1").fadeOut(500);
+        $("#img-2").fadeIn(500);
+        });
+        $("#img-2").click(function(){
+        $("#img-2").fadeOut(500);
+        $("#img-1").fadeIn(500);
+        });
+
+
+      });
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <img src="img1.jpg" id="img-1" width="238" height="244">
+      <img src="弘大大頭照.jpg" id="img-2" width="238" height="244">
+      <div id="intro">
+        <h1>陳品婷</h1>
+        <p>台北, 台灣</p>
+        <p>carpe diam</p>
+      </div>
+      <div id="center">
+        <h2>自我介紹</h2>
+        <p>Joyce Chen</p>
+        <p>1994.09.22</p>
+        <p>台灣科技大學 應用外語系</p>
+        <h2>工作經歷</h2>
+        <ul>
+          <li>2017~台灣豐田通商</li>
+        </ul>
+        <h2></h2>
+        <ul></ul>
+      </div>
+      <div id="right">
+        <h2>個性</h2>
+        <div class="skill">
+            內向<div class="righttext">外向</div>
+            <div class="graybar"></div>
+            <div class="greenbar2"></div>
+          </div>
+          <div class="skill">
+              理性<div class="righttext">感性</div>
+              <div class="graybar"></div>
+              <div class="greenbar2" style="left:60%;"></div>
+            </div>
+  
+        <h2>技能</h2>
+        <div class="skill">
+          HTML
+          <div class="graybar"></div>
+          <div class="greenbar" style="width: 50%;"></div>
+        </div>
+          <div class="skill">
+            CSS
+            <div class="graybar"></div>
+            <div class="greenbar" style="width: 25%;"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
